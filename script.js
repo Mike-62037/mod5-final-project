@@ -8,9 +8,9 @@ let currentMovies = [];
 
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const search = searchInput.value.trim();
-  if (search) {
-    fetchMovies(search);
+  const searchTerm = searchInput.value.trim();
+  if (searchTerm) {
+    fetchMovies(searchTerm);
   }
 });
 
